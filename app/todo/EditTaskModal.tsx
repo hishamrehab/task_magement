@@ -24,7 +24,6 @@ interface EditTaskModalProps {
 const EditTaskModal: React.FC<EditTaskModalProps> = ({ isOpen, onClose, task, onSave }) => {
   const [updatedTask, setUpdatedTask] = useState({ ...task });
 
-   console.log(updatedTask);
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setUpdatedTask((prev) => ({
       ...prev,

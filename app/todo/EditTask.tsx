@@ -3,7 +3,6 @@
 import { IconSvgProps } from "@/types";
 import { editTask } from "../lib/taskSlice";
 import { useDispatch } from "react-redux";
-
 import EditTaskModal from "./EditTaskModal";
 import { Button, useDisclosure } from "@heroui/react";
 

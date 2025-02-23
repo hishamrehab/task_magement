@@ -45,13 +45,13 @@ setEditData({
      <CardHeader className="text-center text-2xl font-bold mx-auto my-5">Online-Task-Mangement</CardHeader>
          <Image
           alt="heroui logo"
-          height={150}
+          height={200}
           src="/image.png"
           width={200}
           className="mx-auto rounded-xl "
         />
 
-   <form onSubmit={handleSubmit} className="bg-gray-900 text-white p-3 md:p-6 rounded-lg shadow-lg  m-auto w-full md:min-w-[70%] lg:min-w-[1000px]">
+   <form onSubmit={handleSubmit} className="bg-gray-900 text-white p-3 md:p-6 rounded-lg shadow-lg  m-auto w-full md:max-w-[80%] lg:min-w-[800px] lg:max-w-[1000px]">
    <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5 gap-x-6 ">
     <InputComponent
     required
