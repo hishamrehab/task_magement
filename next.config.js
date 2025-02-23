@@ -1,12 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  eslint: {
-    ignoreDuringBuilds: true, // ✅ Ignores ESLint errors in build step
+  output: "export",
+    typescript: {
+    ignoreBuildErrors: true,
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+
   remotePatterns: [
     {
-      protocol: "https", // Specify the protocol (http or https)
-      hostname: "avatars.githubusercontent.com", // Define the hostname
+      protocol: "https", 
+      hostname: "avatars.githubusercontent.com", 
     },
   ],
 

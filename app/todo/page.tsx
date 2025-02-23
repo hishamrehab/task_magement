@@ -8,8 +8,8 @@ import { useRouter } from "next/navigation";
 import {  useState } from "react";
 import TasksTable from "./TasksTable";
 import { useDispatch } from "react-redux";
-import { addTask } from "../lib/taskSlice";
 
+import { addTask } from "../lib/taskSlice";
 export default function ToDoPage() {
   const [editData, setEditData] = useState({ name: "", description: "", dueDate: "" , completed : ""});
 const dispatch = useDispatch();
@@ -45,9 +45,9 @@ setEditData({
      <CardHeader className="text-center text-2xl font-bold mx-auto my-5">Online-Task-Mangement</CardHeader>
          <Image
           alt="heroui logo"
-          height={200}
           src="/image.png"
           width={200}
+          height={200}
           className="mx-auto rounded-xl "
         />
 
